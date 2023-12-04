@@ -252,6 +252,8 @@ export default class Dropzone extends Emitter {
 
         // Making sure that no one can "tab" into this field.
         this.hiddenFileInput.setAttribute("tabindex", "-1");
+        // Add arialabel for a11y
+        this.hiddenFileInput.ariaLabel = "dropzone hidden input";
 
         // Not setting `display="none"` because some browsers don't accept clicks
         // on elements that aren't displayed.
