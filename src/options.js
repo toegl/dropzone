@@ -175,7 +175,7 @@ let defaultOptions = {
   /**
    * Should the default headers be set or not?
    * Accept: application/json <- for requesting json response
-   * Cache-Control: no-cache <- Request shouldnt be cached
+   * Cache-Control: no-cache <- Request shouldn't be cached
    * X-Requested-With: XMLHttpRequest <- We sent the request via XMLHttpRequest
    */
   defaultHeaders: true,
@@ -707,7 +707,7 @@ let defaultOptions = {
 
   errormultiple() {},
 
-  // Called when a file gets processed. Since there is a cue, not all added
+  // Called when a file gets processed. Since there is a queue, not all added
   // files are processed immediately.
   // Receives `file`
   processing(file) {

@@ -773,7 +773,7 @@ export default class Dropzone extends Emitter {
       total: file.size,
       bytesSent: 0,
       filename: this._renameFile(file),
-      // Not setting chunking information here, because the acutal data — and
+      // Not setting chunking information here, because the actual data — and
       // thus the chunks — might change if `options.transformFile` is set
       // and does something to the data.
     };
@@ -1734,7 +1734,7 @@ export default class Dropzone extends Emitter {
 Dropzone.initClass();
 
 // This is a map of options for your different dropzones. Add configurations
-// to this object for your different dropzone elemens.
+// to this object for your different dropzone elements.
 //
 // Example:
 //
