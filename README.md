@@ -1,6 +1,13 @@
 <img alt="Dropzone.js" src="https://raw.githubusercontent.com/dropzone/dropzone/assets/github-logo.svg" />
 
-[![Test and Release](https://github.com/dropzone/dropzone/actions/workflows/test-and-release.yml/badge.svg)](https://github.com/dropzone/dropzone/actions/workflows/test-and-release.yml)
+[![Validate](https://github.com/NicolasCARPi/dropzone/actions/workflows/validating.yml/badge.svg)](https://github.com/dropzone/dropzone/actions/workflows/validating.yml)
+[![CodeQL](https://github.com/NicolasCARPi/dropzone/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/dropzone/dropzone/actions/workflows/codeql-analysis.yml)
+
+# Fork
+
+This fork exists because upstream isn't maintained anymore.
+
+# Description
 
 Dropzone is a JavaScript library that turns any HTML element into a dropzone.
 This means that a user can drag and drop a file onto it, and Dropzone will
