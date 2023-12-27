@@ -1,6 +1,6 @@
 {
   "name": "@deltablot/dropzone",
-  "version": "7.0.0-alpha2",
+  "version": "7.0.0-alpha3",
   "description": "Handles drag and drop of files for you.",
   "keywords": [
     "dragndrop",
@@ -32,16 +32,8 @@
   },
   "maintainers": [
     {
-      "name": "Matias Meno",
-      "email": "m@tias.me",
-      "web": "https://www.yesmeno.com"
-    }
-  ],
-  "contributors": [
-    {
-      "name": "Matias Meno",
-      "email": "m@tias.me",
-      "web": "https://www.yesmeno.com"
+      "name": "Nicolas CARPi",
+      "web": "https://www.deltablot.com"
     }
   ],
   "scripts": {
@@ -53,13 +45,12 @@
     "start-test-server": "node test/test-server.js"
   },
   "bugs": {
-    "email": "m@tias.me",
-    "url": "https://github.com/dropzone/dropzone/issues"
+    "url": "https://github.com/NicolasCARPi/dropzone/issues"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dropzone/dropzone.git"
+    "url": "https://github.com/NicolasCARPi/dropzone.git"
   },
   "dependencies": {
     "@swc/helpers": "^0.5.3",
