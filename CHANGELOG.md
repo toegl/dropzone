@@ -1,3 +1,18 @@
+## 7.0.0-alpha2
+
+* README changes
+
+## 7.0.0-alpha
+
+This is the first release of this fork. Mainly to test if publish action runs fine.
+
+* upgrade some dependencies
+* add github actions
+* fix improper grammer PR dropzone/dropzone#2211 by @Offlein
+* Send at least one chunk if filesize is 0. Fix for dropzone/dropzone#1982. PR dropzone/dropzone#2153 by @Forceu
+* fix typos. fix dropzone/dropzone#2140
+* add arialabel to hidden input
+
 ## 6.0.0-beta.2
 
 - Add `binaryBody` support (thanks to @patrickbussmann and @meg1502).
