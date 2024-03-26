@@ -1,3 +1,7 @@
+## 7.0.0
+
+* No issues were reported with alpha versions, so this is the (maintained) stable version now. There are no changes from alpha2.
+
 ## 7.0.0-alpha2
 
 * README changes
