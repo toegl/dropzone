@@ -306,11 +306,7 @@ export default class Dropzone extends Emitter {
       // drag and drop behaviour.
       if (!containsFiles(e)) return;
       e.stopPropagation();
-      if (e.preventDefault) {
-        return e.preventDefault();
-      } else {
-        return (e.returnValue = false);
-      }
+      return e.preventDefault();
     };
 
     // Create the listeners
