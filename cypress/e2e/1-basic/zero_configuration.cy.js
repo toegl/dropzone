@@ -19,4 +19,19 @@ describe("Dropzone with zero configuration", () => {
       });
     });
   });
+
+  it("uploads two files", () => {
+    cy.intercept("POST", "/").as("upload");
+
+    cy.get(".dropzone")
+      .attachFile("image.jpg", { subjectType: "drag-n-drop" })
+      .attachFile("image.tiff", { subjectType: "drag-n-drop" })
+
+    cy.wait("@upload").then((interception) => {
+      expect(interception.response.statusCode).to.eq(200);
+      expect(interception.response.body).to.deep.eq({
+        success: true,
+      });
+    });
+  });
 });
