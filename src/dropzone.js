@@ -1223,7 +1223,6 @@ export default class Dropzone extends Emitter {
         // uploadMultiple is not allowed with this option.
         let file = files[0];
         let transformedFile = transformedFiles[0];
-        let startedChunkCount = 0;
 
         file.upload.chunks = [];
 
@@ -1237,8 +1236,6 @@ export default class Dropzone extends Emitter {
 
           // This means, that all chunks have already been started.
           if (chunkIndex >= file.upload.totalChunkCount) return;
-
-          startedChunkCount++;
 
           let start = chunkIndex * this.options.chunkSize;
           let end = Math.min(
