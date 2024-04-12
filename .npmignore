@@ -1,4 +1,5 @@
 .github
+.parcel-cache
 .sass-cache
 .idea
 cypress
@@ -7,4 +8,7 @@ tool
 test
 babel.config.js
 webpack.config.js
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+README.md
 CONTRIBUTING.md
