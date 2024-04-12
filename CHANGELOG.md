@@ -1,3 +1,8 @@
+## 7.0.4
+
+* Upgrade dependencies
+* Add SECURITY.md file (and enable security settings on repository)
+
 ## 7.0.3
 
 * Add more files to .npmignore: no need to distribute parcel-cache or documentation files
