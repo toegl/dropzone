@@ -8,13 +8,18 @@ jobs:
         node: [ '18', '20' ]
     name: Node ${{ matrix.node }} test
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
           cache: 'npm'
       - name: Install dependencies
         run: yarn install
-      #- name: Run test
-      #run: yarn run test
+      - name: Run test
+        run: yarn run test
+      - uses: cypress-io/github-action@v6
+        with:
+          start: yarn start-test-server
+          wait-on: "http://localhost:8888"
+          wait-on-timeout: 5
