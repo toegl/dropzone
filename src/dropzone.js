@@ -2019,7 +2019,6 @@ Dropzone.SUCCESS = "success";
 // Fixes a bug which squash image vertically while drawing into canvas for some images.
 // This is a bug in iOS6 devices. This function from https://github.com/stomita/ios-imagefile-megapixel
 let detectVerticalSquash = function (img) {
-  let iw = img.naturalWidth;
   let ih = img.naturalHeight;
   let canvas = document.createElement("canvas");
   canvas.width = 1;
