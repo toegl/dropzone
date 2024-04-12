@@ -1,3 +1,23 @@
+## 7.1.0
+
+With this release, we drop deprecated and old things, and bring back the test suite.
+
+### Breaking change
+
+If you have `acceptedMimeTypes` in your options, replace it with `acceptedFiles`. This option was deprecated 3 years ago, and has now be completely removed.
+
+### Changes
+
+* All tests now run: a previous change made it run only one single test! (by using `describe.only()` instead of `describe()`)
+* The test suite now runs on each commit in a GH Action
+* Remove a dependency on `just-extend`: use `Object.assign()` instead
+* Simplify greatly the browser detection and remove blockedBrowser code that only targeted opera 12 from 12 years ago
+* Removed some IE related code and simplified some code paths as we now expect a decent enough browser
+* Some code cleanup: remove unused variables
+* Use crypto.randomUUID instead of a custom function
+* Run CodeQL only in src/
+* Update cypress config
+
 ## 7.0.4
 
 * Upgrade dependencies
