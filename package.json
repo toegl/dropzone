@@ -53,8 +53,7 @@
     "url": "https://github.com/NicolasCARPi/dropzone.git"
   },
   "dependencies": {
-    "@swc/helpers": "^0.5.9",
-    "just-extend": "^5.0.0"
+    "@swc/helpers": "^0.5.9"
   },
   "devDependencies": {
     "@parcel/transformer-inline-string": "^2.0.0",

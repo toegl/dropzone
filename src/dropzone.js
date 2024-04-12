@@ -1,4 +1,3 @@
-import extend from "just-extend";
 import Emitter from "./emitter";
 import defaultOptions from "./options";
 
@@ -81,8 +80,7 @@ export default class Dropzone extends Emitter {
     let elementOptions =
       (left = Dropzone.optionsForElement(this.element)) != null ? left : {};
 
-    this.options = extend(
-      true,
+    this.options = Object.assign(
       {},
       defaultOptions,
       elementOptions,
@@ -1371,7 +1369,7 @@ export default class Dropzone extends Emitter {
     }
 
     if (this.options.headers) {
-      extend(headers, this.options.headers);
+      Object.assign(headers, this.options.headers);
     }
 
     for (let headerName in headers) {
