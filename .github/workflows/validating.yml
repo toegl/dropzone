@@ -16,6 +16,8 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: yarn install
+      - name: Build
+        run: yarn run build
       - name: Run test
         run: yarn run test
       - uses: cypress-io/github-action@v6
