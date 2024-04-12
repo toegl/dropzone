@@ -297,15 +297,7 @@ export default class Dropzone extends Emitter {
     });
 
     const containsFiles = function (e) {
-      if (e.dataTransfer.types) {
-        // Because e.dataTransfer.types is an Object in
-        // IE, we need to iterate like this instead of
-        // using e.dataTransfer.types.some()
-        for (var i = 0; i < e.dataTransfer.types.length; i++) {
-          if (e.dataTransfer.types[i] === "Files") return true;
-        }
-      }
-      return false;
+      return e.dataTransfer.types && e.dataTransfer.types.includes("Files");
     };
 
     let noPropagation = function (e) {
