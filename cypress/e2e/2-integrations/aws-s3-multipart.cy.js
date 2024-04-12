@@ -31,7 +31,7 @@ describe("Dropzone with zero configuration", () => {
         expect(interception.request.headers["content-length"]).to.eq(
           `${remainingSize > chunkSize ? chunkSize : remainingSize}`
         );
-        expect(JSON.parse(interception.response.body)).to.deep.eq({
+        expect(interception.response.body).to.deep.eq({
           success: true,
         });
         remainingSize -= chunkSize;

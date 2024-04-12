@@ -13,7 +13,8 @@ describe("Dropzone with zero configuration", () => {
     });
 
     cy.wait("@upload").then((interception) => {
-      expect(JSON.parse(interception.response.body)).to.deep.eq({
+      expect(interception.response.statusCode).to.eq(200);
+      expect(interception.response.body).to.deep.eq({
         success: true,
       });
     });
