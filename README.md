@@ -1,5 +1,6 @@
 <img alt="Dropzone.js" src="https://raw.githubusercontent.com/dropzone/dropzone/assets/github-logo.svg" />
 
+[![npm version](https://badge.fury.io/js/@deltablot%2Fdropzone.svg)](https://badge.fury.io/js/@deltablot%2Fdropzone)
 [![Validate](https://github.com/NicolasCARPi/dropzone/actions/workflows/validating.yml/badge.svg)](https://github.com/NicolasCARPi/dropzone/actions/workflows/validating.yml)
 [![CodeQL](https://github.com/NicolasCARPi/dropzone/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/NicolasCARPi/dropzone/actions/workflows/codeql-analysis.yml)
 
