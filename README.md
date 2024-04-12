@@ -1,11 +1,11 @@
 <img alt="Dropzone.js" src="https://raw.githubusercontent.com/dropzone/dropzone/assets/github-logo.svg" />
 
-[![Validate](https://github.com/NicolasCARPi/dropzone/actions/workflows/validating.yml/badge.svg)](https://github.com/dropzone/dropzone/actions/workflows/validating.yml)
-[![CodeQL](https://github.com/NicolasCARPi/dropzone/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/dropzone/dropzone/actions/workflows/codeql-analysis.yml)
+[![Validate](https://github.com/NicolasCARPi/dropzone/actions/workflows/validating.yml/badge.svg)](https://github.com/NicolasCARPi/dropzone/actions/workflows/validating.yml)
+[![CodeQL](https://github.com/NicolasCARPi/dropzone/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/NicolasCARPi/dropzone/actions/workflows/codeql-analysis.yml)
 
 # Fork
 
-This fork exists because upstream isn't maintained anymore.
+This fork exists because upstream isn't maintained anymore. Its goal is to maintain this library in a good state, with mainly bugfixes and possibly minor improvements.
 
 # Description
 
@@ -14,7 +14,7 @@ This means that a user can drag and drop a file onto it, and Dropzone will
 display file previews and upload progress, and handle the upload for you via
 XHR.
 
-It's fully configurable, can be styled according to your needs and is trusted by
+It is fully configurable, can be styled according to your needs and is trusted by
 thousands.
 
 <div align="center">
@@ -26,9 +26,9 @@ thousands.
 Install:
 
 ```bash
-$ npm install --save dropzone
+$ npm install --save @deltablot/dropzone
 # or with yarn:
-$ yarn add dropzone
+$ yarn add @deltablot/dropzone
 ```
 
 Use as **ES6 module** (recommended):
@@ -53,10 +53,10 @@ bundlers](https://github.com/dropzone/dropzone-examples)
 Use the standalone files like this:
 
 ```html
-<script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+<script src="https://unpkg.com/@deltablot/dropzone@7/dist/dropzone.min.js"></script>
 <link
   rel="stylesheet"
-  href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css"
+  href="https://unpkg.com/@deltablot/dropzone@7/dist/dropzone.min.css"
   type="text/css"
 />
 
@@ -71,31 +71,17 @@ Use the standalone files like this:
 ---
 
 - [📚 Full documentation](https://docs.dropzone.dev)
-- [⚙️ `src/options.js`](https://github.com/dropzone/dropzone/blob/main/src/options.js)
+- [⚙️ `src/options.js`](https://github.com/NicolasCARPi/dropzone/blob/main/src/options.js)
   for all available options
 
 ---
 
-> ⚠️ **NOTE**: We are currently moving away from IE support to make the library
-> more lightweight. If you don't care about IE but about size, you can already
-> opt into `6.0.0-beta.1`. Please make sure to pin the specific version since
-> parts of the API might change slightly. You can always read about the changes
-> in the [`CHANGELOG`](./CHANGELOG.md) file.
-
 ## Community
 
-If you need support please use the [discussions section][discussions] or
-[stackoverflow][so] with the `dropzone.js` tag and **not** the GitHub issues
-tracker. Only post an issue here if you think you discovered a bug.
+If you need support please open an [issue](https://github.com/NicolasCARPi/dropzone/issues).
 
 If you have a feature request or want to discuss something, please use the
-[discussions][] as well.
-
-[discussions]: https://github.com/dropzone/dropzone/discussions
-[so]: https://stackoverflow.com/questions/tagged/dropzone.js
-
-> ⚠️ **Please read the [contributing guidelines](CONTRIBUTING.md) before you
-> start working on Dropzone!**
+[issues](https://github.com/NicolasCARPi/dropzone/issues) as well.
 
 ## Main features ✅
 
@@ -116,4 +102,4 @@ If you have a feature request or want to discuss something, please use the
 
 # MIT License
 
-See the [LICENSE](https://github.com/dropzone/dropzone/blob/main/LICENSE) file
+See the [LICENSE](./LICENSE) file

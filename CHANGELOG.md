@@ -1,3 +1,12 @@
+## 7.0.3
+
+* Add more files to .npmignore: no need to distribute parcel-cache or documentation files
+* Remove composer.json
+
+## 7.0.2
+
+* Try and fix the publish on npm action (it worked).
+
 ## 7.0.1
 
 * Upgrade publish action version. Try and fix the publish on npm action.
