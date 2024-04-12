@@ -2,31 +2,8 @@ import { Dropzone } from "../../src/dropzone.js";
 
 describe("Static functions", function () {
   describe("Dropzone.isBrowserSupported()", function () {
-    let initialValue;
-    beforeEach(() => {
-      initialValue = Dropzone.blockedBrowsers;
-    });
-    afterEach(() => {
-      Dropzone.blockedBrowsers = initialValue;
-      Dropzone.blacklistedBrowsers = undefined;
-    });
-    it("should use blockedBrowsers usually", () => {
-      let initialValue = Dropzone.blockedBrowsers;
+    it("should be supported browser", () => {
       Dropzone.isBrowserSupported().should.be.true;
-      initialValue.should.equal(Dropzone.blockedBrowsers);
-
-      Dropzone.blockedBrowsers = [/HeadlessChrome/];
-      Dropzone.isBrowserSupported().should.be.false;
-    });
-    it("should user blacklistedBrowsers if its set", () => {
-      let initialValue = Dropzone.blockedBrowsers;
-
-      Dropzone.isBrowserSupported().should.be.true;
-
-      Dropzone.blacklistedBrowsers = [/HeadlessChrome/];
-      Dropzone.isBrowserSupported().should.be.false;
-      initialValue.should.not.equal(Dropzone.blockedBrowsers);
-      Dropzone.blockedBrowsers.should.equal(Dropzone.blacklistedBrowsers);
     });
   });
 

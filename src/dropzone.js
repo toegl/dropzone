@@ -63,7 +63,7 @@ export default class Dropzone extends Emitter {
     }
 
     // make sure we actually have an HTML Element
-    if (!this.element instanceof HTMLElement) {
+    if (this.element === null || !this.element instanceof HTMLElement) {
       throw new Error("Invalid dropzone element: not an instance of HTMLElement.");
     }
 
@@ -104,12 +104,6 @@ export default class Dropzone extends Emitter {
 
     if (!this.options.url) {
       throw new Error("No URL provided.");
-    }
-
-    if (this.options.acceptedFiles && this.options.acceptedMimeTypes) {
-      throw new Error(
-        "You can't provide both 'acceptedFiles' and 'acceptedMimeTypes'. 'acceptedMimeTypes' is deprecated."
-      );
     }
 
     if (this.options.uploadMultiple && this.options.chunking) {
@@ -1768,14 +1762,9 @@ Dropzone.discover = function () {
   })();
 };
 
-// Checks if the browser is supported
+// Checks if the browser is supported by simply checking if Promise is here: a good cutoff
 Dropzone.isBrowserSupported = function () {
-    return window.File &&
-    window.FileReader &&
-    window.FileList &&
-    window.Blob &&
-    window.FormData &&
-    document.querySelector;
+  return typeof Promise !== "undefined";
 };
 
 Dropzone.dataURItoBlob = function (dataURI) {

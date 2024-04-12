@@ -29,7 +29,7 @@ describe("Dropzone", function () {
 
     it("should throw an exception if the element is invalid", () =>
       expect(() => (dropzone = new Dropzone("#invalid-element"))).to.throw(
-        "Invalid dropzone element."
+        "Invalid dropzone element: not an instance of HTMLElement."
       ));
 
     it("should throw an exception if assigned twice to the same element", function () {
@@ -37,20 +37,6 @@ describe("Dropzone", function () {
       dropzone = new Dropzone(element, { url: "url" });
       return expect(() => new Dropzone(element, { url: "url" })).to.throw(
         "Dropzone already attached."
-      );
-    });
-
-    it("should throw an exception if both acceptedFiles and acceptedMimeTypes are specified", function () {
-      let element = document.createElement("div");
-      return expect(
-        () =>
-          (dropzone = new Dropzone(element, {
-            url: "test",
-            acceptedFiles: "param",
-            acceptedMimeTypes: "types",
-          }))
-      ).to.throw(
-        "You can't provide both 'acceptedFiles' and 'acceptedMimeTypes'. 'acceptedMimeTypes' is deprecated."
       );
     });
 
@@ -116,14 +102,6 @@ describe("Dropzone", function () {
           },
         })));
 
-      it("should set acceptedFiles if deprecated acceptedMimetypes option has been passed", function () {
-        dropzone = new Dropzone(element, {
-          url: "/some/other/url",
-          acceptedMimeTypes: "my/type",
-        });
-        return dropzone.options.acceptedFiles.should.equal("my/type");
-      });
-
       return describe("options.clickable", function () {
         let clickableElement = null;
         dropzone = null;
@@ -180,16 +158,12 @@ describe("Dropzone", function () {
           Dropzone.createElement('<form action="/"></form>'),
           { clickable: true, acceptedFiles: "audio/*,video/*" }
         ),
-        "using acceptedMimeTypes": new Dropzone(
-          Dropzone.createElement('<form action="/"></form>'),
-          { clickable: true, acceptedMimeTypes: "audio/*,video/*" }
-        ),
       };
 
       it("should not add an accept attribute if no acceptParameter", function () {
         let dropzone = new Dropzone(
           Dropzone.createElement('<form action="/"></form>'),
-          { clickable: true, acceptParameter: null, acceptedMimeTypes: null }
+          { clickable: true, acceptParameter: null, acceptedFiles: null }
         );
         return dropzone.hiddenFileInput.hasAttribute("accept").should.be.false;
       });
@@ -248,7 +222,6 @@ describe("Dropzone", function () {
       let dropzone = new Dropzone(element, {
         clickable: true,
         acceptParameter: null,
-        acceptedMimeTypes: null,
       });
       return element.querySelector(".dz-message").should.be.instanceof(Element);
     });
@@ -263,7 +236,6 @@ describe("Dropzone", function () {
       let dropzone = new Dropzone(element, {
         clickable: true,
         acceptParameter: null,
-        acceptedMimeTypes: null,
       });
       element.querySelector(".dz-message").should.equal(msg);
 
@@ -280,7 +252,7 @@ describe("Dropzone", function () {
       return (dropzone = new Dropzone(element, {
         maxFilesize: 4,
         url: "url",
-        acceptedMimeTypes: "audio/*,image/png",
+        acceptedFiles: "audio/*,image/png",
         maxFiles: 3,
       }));
     });
@@ -502,7 +474,7 @@ describe("Dropzone", function () {
         maxFilesize: 4,
         maxFiles: 100,
         url: "url",
-        acceptedMimeTypes: "audio/*,image/png",
+        acceptedFiles: "audio/*,image/png",
         uploadprogress() {},
       }));
     });
@@ -583,7 +555,7 @@ describe("Dropzone", function () {
         });
 
         dropzone.accept(file, (err) =>
-          expect(err).to.equal("You can not upload any more files.")
+          expect(err).to.equal("You cannot upload any more files.")
         );
         return called.should.be.ok;
       });
@@ -767,7 +739,7 @@ describe("Dropzone", function () {
           new Dropzone(element, {
             maxFilesize: 4,
             url: "url",
-            acceptedMimeTypes: "audio/*,image/png",
+            acceptedFiles: "audio/*,image/png",
             uploadprogress() {},
           })).should.not.throw(Error);
       });

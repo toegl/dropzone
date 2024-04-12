@@ -209,12 +209,6 @@ let defaultOptions = {
   acceptedFiles: null,
 
   /**
-   * **Deprecated!**
-   * Use acceptedFiles instead.
-   */
-  acceptedMimeTypes: null,
-
-  /**
    * If false, files will be added to the queue but the queue will not be
    * processed automatically.
    * This can be useful if you need some additional user input before sending

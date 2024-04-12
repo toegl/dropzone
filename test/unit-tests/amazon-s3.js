@@ -39,7 +39,7 @@ describe("Amazon S3 Support", function () {
     });
   });
 
-  describe.only("upload", () => {
+  describe("upload", () => {
     let element = null;
     let dropzone = null;
     let requests = null;
