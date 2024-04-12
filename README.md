@@ -32,18 +32,20 @@ $ npm install --save @deltablot/dropzone
 $ yarn add @deltablot/dropzone
 ```
 
+First argument is an element to bind to, second argument is the [`options`](./src/options.js) object.
+
 Use as **ES6 module** (recommended):
 
 ```js
 import { Dropzone } from "dropzone";
-const dropzone = new Dropzone("div#myId", { url: "/file/post" });
+const dropzone = new Dropzone("#elementId", { url: "/file/post" });
 ```
 
 or use as **CommonJS module**:
 
 ```js
 const { Dropzone } = require("dropzone");
-const dropzone = new Dropzone("div#myId", { url: "/file/post" });
+const dropzone = new Dropzone("#elementId", { url: "/file/post" });
 ```
 
 [👉 Checkout our example implementations for different
@@ -65,7 +67,7 @@ Use the standalone files like this:
 
 <script>
   // Dropzone has been added as a global variable.
-  const dropzone = new Dropzone("div.my-dropzone", { url: "/file/post" });
+  const dropzone = new Dropzone(".my-dropzone", { url: "/file/post" });
 </script>
 ```
 
