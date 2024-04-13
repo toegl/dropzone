@@ -1,3 +1,10 @@
+## 7.1.1
+
+A small patch release with an important bugfix that was asked by the community for a long time:
+
+* Fix issue with exif resizing of thumbnail that messed up the files. fix dropzone/dropzone#1967
+  PR dropzone/dropzone#2001 by @kaymes
+
 ## 7.1.0
 
 With this release, we drop deprecated and old things, and bring back the test suite.
