@@ -8,6 +8,8 @@
 
 This fork exists because upstream isn't maintained anymore. Its goal is to maintain this library in a good state, with mainly bugfixes and possibly minor improvements.
 
+## the new package name is `@deltablot/dropzone`
+
 # Description
 
 Dropzone is a JavaScript library that turns any HTML element into a dropzone.
