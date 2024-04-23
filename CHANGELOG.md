@@ -1,3 +1,9 @@
+## 7.1.2
+
+A small patch release with an important bugfix that was asked by the community for a long time:
+
+* fix: parallelChunkUploads should respect parallelUploads. fix dropzone/dropzone#2030 (based on PR dropzone/dropzone#2249 by @labor4)
+
 ## 7.1.1
 
 A small patch release with an important bugfix that was asked by the community for a long time:
