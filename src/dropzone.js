@@ -1277,7 +1277,12 @@ export default class Dropzone extends Emitter {
         };
 
         if (this.options.parallelChunkUploads) {
-          for (let i = 0; i < file.upload.totalChunkCount; i++) {
+          // we want to limit parallelChunkUploads to the same value as parallelUploads option
+          const parallelCount = Math.min(
+            this.options.parallelChunkUploads === true ? this.options.parallelUploads : this.options.parallelChunkUploads,
+            file.upload.totalChunkCount
+          );
+          for (let i = 0; i < parallelCount; i++) {
             handleNextChunk();
           }
         } else {
