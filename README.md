@@ -58,10 +58,10 @@ bundlers](https://github.com/dropzone/dropzone-examples)
 Use the standalone files like this:
 
 ```html
-<script src="https://unpkg.com/@deltablot/dropzone@7/dist/dropzone.min.js"></script>
+<script src="https://unpkg.com/@deltablot/dropzone@7/dist/dropzone-min.js"></script>
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@deltablot/dropzone@7/dist/dropzone.min.css"
+  href="https://unpkg.com/@deltablot/dropzone@7/dist/dropzone.css"
   type="text/css"
 />
 
