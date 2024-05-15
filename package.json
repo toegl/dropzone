@@ -13,6 +13,7 @@
   "main": "dist/dropzone.js",
   "module": "dist/dropzone.mjs",
   "standalone": "dist/dropzone-min.js",
+  "types": "dist/dropzone.d.ts",
   "browserslist": "defaults, > 0.25%",
   "targets": {
     "main": {
@@ -38,7 +39,7 @@
   ],
   "scripts": {
     "watch": "parcel watch",
-    "build": "parcel build && yarn run css",
+    "build": "parcel build && yarn run css && tsc",
     "css": "yarn sass src/:dist/ --style compressed",
     "watch-css": "yarn sass src/:dist/ --watch --style compressed",
     "test": "karma start test/karma.conf.js",
@@ -72,6 +73,7 @@
     "parcel": "^2.0.0",
     "sass": "^1.33.0",
     "sinon": "^11.1.2",
-    "sinon-chai": "^3.5.0"
+    "sinon-chai": "^3.5.0",
+    "typescript": "^5.4.5"
   }
 }
