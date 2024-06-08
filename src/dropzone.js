@@ -730,6 +730,7 @@ export default class Dropzone extends Emitter {
 
   addFile(file) {
     file.upload = {
+      // note: this only works if window.isSecureContext is true, which includes localhost in http
       uuid: self.crypto.randomUUID(),
       progress: 0,
       // Setting the total upload size to file.size for the beginning
