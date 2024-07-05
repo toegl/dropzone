@@ -2,7 +2,9 @@
 .parcel-cache
 .sass-cache
 .idea
+.pnp*
 .yarn
+.yarnrc.yml
 cypress
 cypress.json
 tool
