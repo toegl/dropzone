@@ -2,6 +2,7 @@
 .parcel-cache
 .sass-cache
 .idea
+.yarn
 cypress
 cypress.json
 tool
