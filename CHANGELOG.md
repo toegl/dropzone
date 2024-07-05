@@ -1,3 +1,7 @@
+## 7.1.3
+
+A very small patch release with a fix regarding the `form` attribute of the hidden `input` field. See dropzone/dropzone#2300. PR #11 by @bancer.
+
 ## 7.1.2
 
 A small patch release with an important bugfix that was asked by the community for a long time:
