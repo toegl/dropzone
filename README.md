@@ -53,6 +53,8 @@ const dropzone = new Dropzone("#elementId", { url: "/file/post" });
 [👉 Checkout our example implementations for different
 bundlers](https://github.com/dropzone/dropzone-examples)
 
+Note: this library must be used in a [secure context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts) (works only over HTTPS or locally).
+
 ## Not using a package manager or bundler?
 
 Use the standalone files like this:
