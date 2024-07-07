@@ -1717,7 +1717,7 @@ Dropzone.options = {};
 // Returns the options for an element or undefined if none available.
 Dropzone.optionsForElement = function (element) {
   // Get the `Dropzone.options.elementId` for this element if it exists
-  if (element.getAttribute("id")) {
+  if (element.getAttribute("id") && typeof Dropzone.options !== 'undefined') {
     return Dropzone.options[camelize(element.getAttribute("id"))];
   } else {
     return undefined;

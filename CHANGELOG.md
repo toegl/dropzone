@@ -1,3 +1,7 @@
+## 7.1.4
+
+Fix bug where using an ID for selecting the dropzone element would make the lib crash. fix #12
+
 ## 7.1.3
 
 A very small patch release with a fix regarding the `form` attribute of the hidden `input` field. See dropzone/dropzone#2300. PR #11 by @bancer.

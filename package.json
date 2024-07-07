@@ -1,6 +1,6 @@
 {
   "name": "@deltablot/dropzone",
-  "version": "7.1.3",
+  "version": "7.1.4",
   "description": "Handles drag and drop of files for you.",
   "keywords": [
     "dragndrop",
