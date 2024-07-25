@@ -39,14 +39,14 @@ First argument is an element to bind to, second argument is the [`options`](./sr
 Use as **ES6 module** (recommended):
 
 ```js
-import { Dropzone } from "dropzone";
+import { Dropzone } from "@deltablot/dropzone";
 const dropzone = new Dropzone("#elementId", { url: "/file/post" });
 ```
 
 or use as **CommonJS module**:
 
 ```js
-const { Dropzone } = require("dropzone");
+const { Dropzone } = require("@deltablot/dropzone");
 const dropzone = new Dropzone("#elementId", { url: "/file/post" });
 ```
 
