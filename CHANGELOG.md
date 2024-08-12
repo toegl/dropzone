@@ -1,3 +1,10 @@
+## 7.1.5
+
+* Fix SASS deprecation warnings with version 1.77.7 (PR #14 by Jules)
+* Fix import statements in README.md (fix #16)
+* Mention the need for secure context in README (fix #13)
+* Upgrade `@swc/helpers` from 0.5.11 to 0.5.12
+
 ## 7.1.4
 
 Fix bug where using an ID for selecting the dropzone element would make the lib crash. fix #12
