@@ -1,6 +1,6 @@
 {
   "name": "@deltablot/dropzone",
-  "version": "7.1.4",
+  "version": "7.1.5",
   "description": "Handles drag and drop of files for you.",
   "keywords": [
     "dragndrop",
@@ -55,7 +55,7 @@
     "url": "https://github.com/NicolasCARPi/dropzone.git"
   },
   "dependencies": {
-    "@swc/helpers": "^0.5.11"
+    "@swc/helpers": "^0.5.12"
   },
   "devDependencies": {
     "@parcel/core": "^2.12.0",
