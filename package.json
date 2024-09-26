@@ -1,6 +1,6 @@
 {
   "name": "@deltablot/dropzone",
-  "version": "7.1.5",
+  "version": "7.1.6",
   "description": "Handles drag and drop of files for you.",
   "keywords": [
     "dragndrop",
@@ -55,25 +55,28 @@
     "url": "https://github.com/NicolasCARPi/dropzone.git"
   },
   "dependencies": {
-    "@swc/helpers": "^0.5.12"
+    "@swc/helpers": "^0.5.13"
+  },
+  "resolutions": {
+    "body-parser": "^1.20.3"
   },
   "devDependencies": {
     "@parcel/core": "^2.12.0",
     "@parcel/transformer-inline-string": "^2.12.0",
     "@parcel/transformer-sass": "^2.12.0",
-    "chai": "^4.4.1",
-    "cypress": "^13.11.0",
-    "express": "^4.19.2",
-    "karma": "^6.4.3",
+    "chai": "^4.5.0",
+    "cypress": "^13.15.0",
+    "express": "^4.21.0",
+    "karma": "^6.4.4",
     "karma-chrome-launcher": "^3.2.0",
     "karma-mocha": "^2.0.1",
     "karma-sinon-chai": "^2.0.2",
     "karma-spec-reporter": "^0.0.36",
-    "mocha": "^10.4.0",
+    "mocha": "^10.7.3",
     "mocha-headless-chrome": "^4.0.0",
     "parcel": "^2.12.0",
-    "sass": "^1.77.4",
-    "sinon": "^18.0.0",
+    "sass": "^1.79.3",
+    "sinon": "^18.0.1",
     "sinon-chai": "^3.7.0",
     "typescript": "^5.4.5"
   },
