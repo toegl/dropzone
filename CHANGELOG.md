@@ -1,3 +1,10 @@
+## 7.1.6
+
+* Add support for MacOS 14+ filenames (PR #21 by @brentmartinmiller, fix #20)
+* Add custom type definition (PR #19 by @doberkofler, fix #7)
+* Readme improvements (PR #15 by @jules-w2)
+* Use setAttributes() for setting the aria-label
+
 ## 7.1.5
 
 * Fix SASS deprecation warnings with version 1.77.7 (PR #14 by Jules)
