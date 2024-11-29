@@ -1,3 +1,11 @@
+# Changelog for dropzone
+
+## 7.2.0
+
+* feat: uuid: add fallback uuid generator for insecure contexts (PR #24 fix #22 by Dieter Oberkofler)
+* dev: minor: improve fallback uuid-generator (PR #27 by Erik Axel Nielsen)
+* dev: chore: bump yarnpkg from 4.2.2 to 4.5.3
+
 ## 7.1.6
 
 * Add support for MacOS 14+ filenames (PR #21 by @brentmartinmiller, fix #20)
