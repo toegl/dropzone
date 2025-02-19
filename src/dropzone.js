@@ -211,7 +211,7 @@ export default class Dropzone extends Emitter {
     if (this.clickableElements.length) {
       let setupHiddenFileInput = () => {
         if (this.hiddenFileInput) {
-          this.hiddenFileInput.parentNode.removeChild(this.hiddenFileInput);
+          this.hiddenFileInput.parentNode?.removeChild(this.hiddenFileInput);
         }
         this.hiddenFileInput = document.createElement("input");
         this.hiddenFileInput.setAttribute("type", "file");
