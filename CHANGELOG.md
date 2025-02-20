@@ -1,5 +1,10 @@
 # Changelog for dropzone
 
+## 7.2.1
+
+* bug/minor: add null check to prevent uncaught type error on parent node (#34 by Christina Toegl)
+  This fix prevents uncaught type errors thrown if hiddenFileInput has no parentNode.
+
 ## 7.2.0
 
 * feat: uuid: add fallback uuid generator for insecure contexts (PR #24 fix #22 by Dieter Oberkofler)
